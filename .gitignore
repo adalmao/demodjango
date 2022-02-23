@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+.env
+static/main/
+albums/
+db.sqlite3
+local_settings.py
+__pycache__/
+django-longer-username-and-email
+migrations/*
+.DS_Store
+*.pyc

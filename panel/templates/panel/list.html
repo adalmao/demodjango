@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LIST</title>
+</head>
+<body>
+	<h1>lista de personas</h1>
+	<ul>
+		{% for p in persons %}
+		<li>{{p.first_name}} - {{p.last_name}} - {{p.email}} - <a href="{% url 'panel:edit' p.pk %}">Editar</a> <a href="{% url 'panel:delete' p.pk %}">Borrar</a></li>
+		{% endfor %}		
+	</ul>
+</body>
+</html>
